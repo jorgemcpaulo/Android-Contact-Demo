@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.github.dcendents.android-maven'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.sample.contact.demo"
-        minSdkVersion 15
-        targetSdkVersion 27
+        minSdkVersion 26
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
     }
@@ -23,10 +23,10 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:27.+'
-    compile 'com.android.support:support-v4:27.+'
-    compile 'com.android.support:recyclerview-v7:27.+'
-    compile 'com.android.support:design:27.+'
+    compile 'com.android.support:appcompat-v7:28.+'
+    compile 'com.android.support:support-v4:28.+'
+    compile 'com.android.support:recyclerview-v7:28.+'
+    compile 'com.android.support:design:28.+'
     compile 'com.android.support:cardview-v7:+'
-    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.jakewharton:butterknife:9.0.0'
 }
