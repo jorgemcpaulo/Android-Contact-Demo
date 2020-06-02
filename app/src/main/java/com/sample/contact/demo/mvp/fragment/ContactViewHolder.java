@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.sample.contact.demo.R;
+import com.sample.contact.demo.R2;
 import com.sample.contact.demo.mvp.model.ContactModel;
 
 import java.util.ArrayList;
@@ -25,17 +26,17 @@ import butterknife.ButterKnife;
 public class ContactViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
     public final View mView;
-
-    @BindView(R.id.person_icon_img)
+    //R2.id;
+    @BindView(R2.id.person_icon_img)
     ImageView mPersonImage;
 
-    @BindView(R.id.name_txt)
+    @BindView(R2.id.name_txt)
     TextView mNameTxt;
 
-    @BindView(R.id.phone_txt)
+    @BindView(R2.id.phone_txt)
     TextView mPhoneTxt;
 
-    @BindView(R.id.call_icon_img)
+    @BindView(R2.id.call_icon_img)
     ImageView mCallImage;
 
     Activity mActivity;
