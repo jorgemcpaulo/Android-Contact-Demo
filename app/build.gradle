@@ -2,11 +2,22 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jakewharton.butterknife'
 
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+group = 'com.github.jorgemcpaulo'
+version = '1.0'
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
     defaultConfig {
+        //applicationId "com.sample.contact.demo"
         minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
